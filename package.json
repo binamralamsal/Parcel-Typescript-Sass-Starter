@@ -1,0 +1,71 @@
+{
+  "name": "parcel-typescript-sass-starter-template",
+  "version": "1.0.0",
+  "description": "Simple Starter template to use for typescript and sass/scss for static sites",
+  "type": "module",
+  "scripts": {
+    "clean:output": "rimraf dist",
+    "build": "npm run clean:output && parcel build --no-cache src/*.html",
+    "dev": "npm run clean:output && parcel src/*.html --open"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "@types/node": "^17.0.36",
+    "parcel": "^2.6.0",
+    "parcel-namer-struct": "link:./parcel-namer-struct",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.29.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^25.0.0",
+    "typescript": "^4.7.2"
+  },
+  "author": "Binamra Lamsal",
+  "license": "ISC",
+  "parcel-namer-struct": [
+    {
+      "type": [
+        "js"
+      ],
+      "dest": "/js"
+    },
+    {
+      "type": [
+        "css"
+      ],
+      "dest": "/css"
+    },
+    {
+      "type": [
+        "jpeg",
+        "jpg"
+      ],
+      "dest": "/images/jpg"
+    },
+    {
+      "type": [
+        "png"
+      ],
+      "dest": "/images/png"
+    },
+    {
+      "type": [
+        "webp"
+      ],
+      "dest": "/images/webp"
+    },
+    {
+      "type": [
+        "svg"
+      ],
+      "dest": "/images/svg"
+    }
+  ]
+}
